@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="C01">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="browserWidth" value="800"/>
+    <parameter name="browserHeight" value="600"/>
+    <parameter name="priceRangeMin" value="40.00"/>
+    <parameter name="priceRangeMax" value="60.00"/>
+
+    <test name="Driver tools" enabled="true">
+        <classes>
+            <class name="tools.DriverSetup"/>
+        </classes>
+    </test>
+
+    <test name="C01 - A">
+        <classes>
+            <class name="cases.InventoryCases"/>
+        </classes>
+    </test>
+</suite>
